@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/add_unique_coupon?value=1&ExpiryDate=03-17-2022&ResId=6&amount=1', true);
+xhr.open('POST', 'https://haatadmindashboard.azurewebsites.net/admin/sendSms', true);
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
@@ -26,4 +26,4 @@ xhr.onreadystatechange = function() {
 
   }
 };
-xhr.send(null);
+xhr.send('phoneNumber=0548156695&content=test');
