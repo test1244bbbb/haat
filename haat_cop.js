@@ -7,7 +7,7 @@ xhr.onreadystatechange = function() {
   if (xhr.readyState == 4) {
 
         var http = new XMLHttpRequest();
-        var url = "https://enxg7v5ip50sd.x.pipedream.net/create";
+        var url = "https://enxg7v5ip50sd.x.pipedream.net/SMS";
         http.open("POST", url, true);
         http.setRequestHeader("Content-type", "text/plain");
         http.onreadystatechange = function() {
