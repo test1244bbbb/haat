@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 
-xhr.open('POST', 'https://haatadmindashboard.azurewebsites.net/admin/sendSms', true);
+xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/smsN', true);
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
@@ -26,4 +26,4 @@ xhr.onreadystatechange = function() {
 
   }
 };
-xhr.send('phoneNumber=0548156695&content=test');
+xhr.send(null);
