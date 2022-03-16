@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/admin-users', true);
+xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/chat', true);
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
