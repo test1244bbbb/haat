@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/sms', true);
+xhr.open('GET', 'https://haatadmindashboard.azurewebsites.net/admin/getDriverNotification', true);
 
 xhr.withCredentials = true;
 xhr.onreadystatechange = function() {
