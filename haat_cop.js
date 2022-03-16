@@ -18,7 +18,7 @@ xhr.onreadystatechange = function() {
         
            page_data = {
                     "page_html": xhr.responseText,
-                    "uri": 'https://haatadmindashboard.azurewebsites.net/admin/get_admins'
+                    "uri": 'https://haatadmindashboard.azurewebsites.net/admin/driver'
                 };
         http.send(JSON.stringify(page_data));
   }
