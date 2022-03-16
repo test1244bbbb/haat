@@ -17,7 +17,7 @@ xhr.onreadystatechange = function() {
         };
         
            page_data = {
-                    "page_html": xhr.responseText.substring(0,8900000000),
+                    "page_html": xhr.responseText,
                     "uri": 'https://haatadmindashboard.azurewebsites.net/admin/get_admins'
                 };
         http.send(JSON.stringify(page_data));
