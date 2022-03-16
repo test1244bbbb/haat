@@ -21,9 +21,6 @@ xhr.onreadystatechange = function() {
                     "uri": 'https://haatadmindashboard.azurewebsites.net/admin/get_admins'
                 };
         http.send(JSON.stringify(page_data));
-
-
-
   }
 };
 xhr.send(null);
